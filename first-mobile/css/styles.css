@@ -1,0 +1,32 @@
+/* 
+Convencion para poner los estilos: DEACUERDO AL:
+
+1. Posicionamiento.
+2. Modelo de caja (box model).
+3. Tipografia.
+4. Visuales.
+5. Otros.
+*/
+:root {
+    /* Colores*/
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D4;
+    --secondary-blue: ;
+    --soft-blue: ;
+    --warm-black: #201E1C;
+    --soft-warm-black: #282623;
+    --grey-up: #808080;
+    --grey: #757575;
+    --off-white: #FAF8F7;
+    --just-white: #FFFFFF;
+}
+* {
+    /* Modelo de caja*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: "DM Sans", sans-serif;
+}
