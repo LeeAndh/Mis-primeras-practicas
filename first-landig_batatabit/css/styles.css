@@ -11,8 +11,8 @@ Convencion para poner los estilos: DEACUERDO AL:
     /* Colores*/
     --bitcoin-orange: #F7931A;
     --soft-orange: #FFE9D4;
-    --secondary-blue: ;
-    --soft-blue: ;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
     --warm-black: #201E1C;
     --soft-warm-black: #282623;
     --grey-up: #808080;
@@ -29,4 +29,521 @@ Convencion para poner los estilos: DEACUERDO AL:
 html {
     font-size: 62.5%;
     font-family: "DM Sans", sans-serif;
+}
+/* Iniciando hoja de estilos */
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 271px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+header .header-logo {
+    width: 151px;
+    height: 24px;
+    margin-top: 40px;
+}
+header .header-logo img {
+    width: 100%;
+    height: 100%;
+}
+header .header-title-container {
+    height: 218px;
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin-top: 33px;
+}
+header .header-title-container h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--just-white);
+    margin-bottom: 26px;
+}
+header .header-title-container p {
+    color: var(--soft-orange);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+.header-button {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 230px;
+    height: 48px;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 18.23px;
+    color: var(--warm-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    background: var(--just-white);
+    text-decoration: none;
+}
+.header-button span {
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/icons/flecha-abajo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 12px, 8px;
+    margin-left: 8px;
+}
+/* estilizando la main */
+main {
+    width: 100%;
+    height: auto;
+    background: var(--off-white);
+}
+.main-exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-exchange-container .main-bg {
+    width: 195px;
+    height: 195px;
+    background-image: url('../assets/img/bitcoin.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main-title-container {
+    margin-top: 40px;
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+}
+.main-title-container h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--warm-black);
+    margin-bottom: 24px;
+}
+.main-title-container p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--grey);
+    text-align: center;
+}
+/* estilizando tablas*/
+.main-tables-container {
+    margin-top: 50px;
+    width: 90%;
+    min-width: 320px;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 20px;
+    padding: 0 50px;
+}
+.main-currency-table {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 30px;
+    /* scroll-snap-align: center; */
+}
+.main-currency-table .currency-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    text-align: initial;
+    margin-left: 12px;
+    margin-bottom: 12px;
+}
+.main-currency-table .orange {
+    color: #FF9536;
+}
+.main-currency-table .blue {
+    color: var(--secondary-blue);
+}
+.currency-table-container {
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 160px;
+    position: relative;
+}
+.main-currency-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+     background-repeat: no-repeat;
+    background-position: center;
+}
+/* .arrow-left {
+    background-image: url('../assets/icons/arrow-left.svg');
+    left: -25px;   
+}
+.arrow-right {
+    background-image: url('../assets/icons/vector-flecha.svg');
+    right: -25px;
+} */
+.currency-table-container table {
+    width: 100%;
+    height: 160px;
+}
+.currency-table-container table tr td {
+    width: 50%;
+    height: 25%;
+    font-family: "Inter", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: #B5B0AC;
+    background-color: var(--just-white);
+}
+.currency-table-container .table-top-left {
+    border-radius: 10px 0 0 0;
+}
+.currency-table-container .table-top-right {
+    border-radius: 0 10px 0 0;
+}
+.currency-table-container .table-bottom-left {
+    border-radius: 0 0 0 10px;
+}
+.currency-table-container .table-bottom-right {
+    border-radius: 0 0 10px 0;
+}
+.currency-table-container .table-right {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+    color: var(--grey);
+}
+.currency-table-container .table-icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 10px;
+}
+.currency-table-container .down {
+    background-image: url('../assets/icons/trending-down.svg');
+}
+.currency-table-container .up {
+    background-image: url('../assets/icons/trending-up.svg');
+}
+.main-currency-table .main-currency-update {
+    width: 175px;
+    height: 30px;
+    margin: 16px auto 0 auto;
+    font-weight: 400;
+    color: var(--warm-black);
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+}
+.main-currency-table .update-orange {
+    background: var(--soft-orange);
+}
+.main-currency-table .update-blue {
+    background: var(--soft-blue);
+}
+.main-currency-update p span {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+}
+
+/* Estilizando seccion de informacion de los productos */
+.main-product-detail {
+    background-color: var(--warm-black);
+    padding: 64px 16px 44px;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-product-detail .product-logo-papa {
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    background-image: url('../assets/img/papita_1.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.product-title-container {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+.product-title-container h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--just-white);
+    margin-bottom: 24px;
+}
+.product-title-container p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+    margin-bottom: 32px;
+}
+.product-cards-container {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    flex-direction: column;;
+}
+.product-cards-container .card {
+    width: 100%;
+    height: 152px;
+    background: var(--soft-warm-black);
+    margin-bottom: 16px;
+    box-shadow: 0px 4px 8px 0px #00000029;
+    padding: 16px;
+}
+.product-cards-container .card-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product-cards-container .clock {
+    background-image: url('../assets/icons/clock.svg');
+}
+.product-cards-container .eyes{
+    background-image: url('../assets/icons/eye.svg');
+}
+.product-cards-container .dollar {
+    background-image: url('../assets/icons/dollar.svg');
+}
+.product-cards-container .check {
+    background-image: url('../assets/icons/check-circle.svg');
+}
+.card h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    color: var(--just-white);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+.bit-img-container {
+    background-image: url(../assets/img/bitcoinbabyx2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-width: 320px;
+    height: 60vh;
+    position: relative;
+}
+.bit-img-container h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--just-white);
+    padding-top: 20%;
+    text-align: center;
+}
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding: 64px 0 54px;
+    background: var(--off-white);
+    text-align: center;
+}
+.main-plans-container .plans-title-container {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+}
+.plans-title-container h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    margin-bottom: 24px;
+}
+.plans-title-container p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin-bottom: 34px;
+    color: var(--grey);
+}
+.plans-cards-slider {
+    display: flex;
+    align-items: center;
+    min-height: 277px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 20px;
+    padding: 0 60px;
+}
+.plans-card-container {
+    background-color: var(--just-white);
+    width: 60%;
+    min-width: 190px;
+    max-width: 270px;
+    height: 247px;
+    border-radius: 8px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px 0px #59491E29;
+    position: relative;
+    scroll-snap-align: center;
+    padding: 0 16px 24px;
+}
+.plans-card-container .recomended {
+    width: 100px;
+    height: 31px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.recomended p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+    font-family: "Inter", sans-serif;
+    color: var(--just-white);
+    padding: 8px;
+}
+.plans-card-container h3 {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin-bottom: 8px;
+}
+.plans-card-container .price {
+    font-family: "Inter", sans-serif;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 6.3rem;
+}
+.plans-card-container .price sup {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 14px;
+    vertical-align: 3rem;
+}
+.plans-card-container .plans-description {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    color: var(--grey);
+    margin-bottom: 16px;
+}
+.plans-card-container .plans-buttom {
+    width: 150px;
+    height: 48px;
+    border: 2px solid var(--bitcoin-orange);
+    padding: 15px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background: var(--off-white);
+    margin: 0 auto;
+}
+/* .plans-card-container .plans-buttom span {
+    display: inline-block;
+} */
+.plans-card-container .plans-buttom .plans-icon {
+    background-image: url('../assets/icons/arrow-yellow.svg');
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+}
+.plans-card-container .card-arrow {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateY(-50%);
+    opacity: 0.3;
+}
+.plans-card-container .card-arrow-left {
+    background-image: url('../assets/icons/arrow-left.svg');
+    left: -50px;
+}
+.plans-card-container .card-arrow-right {
+    background-image: url('../assets/icons/vector-flecha.svg');
+    right: -50px;
+}
+footer {
+    width: 100%;
+    min-width: 320px;
+    height: 150px;
+    background: var(--bitcoin-orange);
+    display: grid;
+    place-items: center;
+}
+.link-list {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    margin: 0 50px; 
+}
+.link-list ul {
+    list-style: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+.logo-footer {
+    width: 64px;
+    height: 50px;
+    background-image: url(../assets/img/logo-footer.svg);
+}
+.link-list ul li {
+    margin: 8px 0;
 }
